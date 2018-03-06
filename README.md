@@ -38,3 +38,4 @@ References
 * gRPC advance (http://www.grpc.io/docs/tutorials/basic/go.html#generating-client-and-server-code)
 * gRPC-gateway a plugin of protoc (https://github.com/grpc-ecosystem/grpc-gateway/)
 * Protocol Buffers (https://developers.google.com/protocol-buffers/docs/proto)
+* Protoc Explained (https://jbrandhorst.com/post/go-protobuf-tips/)
