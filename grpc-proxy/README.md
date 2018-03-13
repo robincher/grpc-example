@@ -69,6 +69,6 @@ Rebuilding is required whenever you update any service definitions.
    ```
    $ cd <this-project-repository>/helloword
 
-   $ protoc -I service/  service/echo.proto   -I %GOPATH%/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis --go_out=google/api/annotations.proto=github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis/google/api,plugins=grpc:service
+   $ protoc -I service/ service/echo.proto   -I %GOPATH%/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis --go_out=google/api/annotations.proto=github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis/google/api,plugins=grpc:service
    ```
 
