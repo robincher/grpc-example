@@ -5,7 +5,7 @@ import (
 	"net"
 
 	"github.com/golang/glog"
-	pb "github.com/robincher/grpc-example/proxy/service"
+	pb "github.com/robincher/grpc-example/grpc-proxy/service"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 )

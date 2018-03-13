@@ -6,7 +6,7 @@ import (
 
 	"github.com/golang/glog"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
-	pb "github.com/robincher/grpc-example/proxy/service"
+	pb "github.com/robincher/grpc-example/grpc-proxy/service"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 )
