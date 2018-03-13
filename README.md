@@ -30,7 +30,7 @@ $ export PATH=$PATH:$GOPATH/bin
 Try On it!
 -------------
 
-Go to the respective folders to kick start your reference.
+Go to the respective folders to get started.
 
 References
 -------------
@@ -38,4 +38,4 @@ References
 * gRPC advance (http://www.grpc.io/docs/tutorials/basic/go.html#generating-client-and-server-code)
 * gRPC-gateway a plugin of protoc (https://github.com/grpc-ecosystem/grpc-gateway/)
 * Protocol Buffers (https://developers.google.com/protocol-buffers/docs/proto)
-* Protobuf Tips (https://jbrandhorst.com/post/go-protobuf-tips/)
+* Protoc Tips (https://jbrandhorst.com/post/go-protobuf-tips/)
