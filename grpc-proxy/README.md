@@ -15,13 +15,14 @@ Try On it!
 - Run the server
 
 ```
+$ cd grpc-proxy
 $ go run server/echo_server.go
 ```
 
 - Run the client (Open a new terminal)
 
 ```
-$ go run client/echo_clent.go
+$ go run client/echo_client.go
 ```
 
 - Run the Proxy 
@@ -67,8 +68,12 @@ Rebuilding is required whenever you update any service definitions.
    Or run `protoc` command (with the grpc plugin)
    
    ```
-   $ cd <this-project-repository>/helloword
+   $cd <this-project-repository>/grpc-proxy
+    
+   # Generate Client and Server Stub
+   $ protoc -I. -I %GOPATH%/src -I  service/ service/echo.proto   -I %GOPATH%/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis --go_out=google/api/annotations.proto=github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis/google/api,plugins=grpc:.
 
-   $ protoc -I service/ service/echo.proto   -I %GOPATH%/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis --go_out=google/api/annotations.proto=github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis/google/api,plugins=grpc:service
+   # Generate Proxy Stub 
+   $ protoc -I. -I %GOPATH%/src -I service/  service/echo.proto -I %GOPATH%/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis --grpc-gateway_out=logtostderr=true:.
    ```
 
